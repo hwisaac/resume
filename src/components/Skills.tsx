@@ -3,19 +3,32 @@ import React from 'react'
 type Props = {}
 
 const data = [
-    {
-        title: 'Language',
-        skills: ['HTML/CSS/JavaScript', 'TypeScript', 'Python']
-    },
-    {
-        title: 'Frontend',
-        skills: ['React', 'Next.js', 'Tailwind CSS', 'zustand, recoil', 'react-hook-form', 'tanstack-query']
-    },
-    {
-        title: 'Backend',
-        skills: ['Django', 'Django Rest Framework', 'PostgreSQL']
-    },
-]
+  {
+    title: 'Language',
+    skills: ['HTML/CSS/JavaScript', 'TypeScript', 'Python'],
+  },
+  {
+    title: 'Frontend',
+    skills: [
+      'React',
+      'Next.js',
+      'Tailwind, styled-components',
+      'zustand, recoil',
+      'react-hook-form',
+      'tanstack-query',
+    ],
+  },
+  {
+    title: 'Backend',
+    skills: [
+      'Django',
+      'Django Rest Framework',
+      'PostgreSQL',
+      'AWS EC2, RDS, S3',
+      'Docker',
+    ],
+  },
+];
 
 export default function Skills({}: Props) {
   return (
