@@ -9,7 +9,7 @@ function App() {
   return (
     <main className='w-full h-min-screen my-8 text-slate-800 pb-20'>
       <div className='w-full max-w-7xl h-full flex flex-col mx-auto'>
-        <header className='flex '>
+        <header className='flex w-full'>
           <Profile />
         </header>
         <div className='flex flex-col gap-8'>

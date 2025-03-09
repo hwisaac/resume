@@ -8,7 +8,7 @@ type Props = {}
 export default function Profile({}: Props) {
   return (
     <div className='flex my-4 px-4'>
-      <div className='size-[140px] rounded-full bg-slate-100 mr-8' />
+      {/* <div className='size-[140px] rounded-full bg-slate-100 mr-8' /> */}
       <ul>
         <li className='font-semibold text-xl mb-1'>황이삭</li>
         <li>Web Developer</li>
