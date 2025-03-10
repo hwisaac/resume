@@ -31,7 +31,7 @@ const projects = [
       'DB - PostgreSQL',
       '배포 - AWS, Github Actions, Docker',
       'PG - 토스 페이먼츠',
-      '동영상 관리 - Vimeo',
+      '동영상 - Vimeo',
     ],
     img: glbabImg,
   },
