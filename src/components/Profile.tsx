@@ -11,7 +11,7 @@ export default function Profile({}: Props) {
       {/* <div className='size-[140px] rounded-full bg-slate-100 mr-8' /> */}
       <ul>
         <li className='font-semibold text-xl mb-1'>황이삭</li>
-        <li>Web Developer</li>
+        <li>Full stack engineer</li>
         <li>Seoul, Korea</li>
         <li className='my-2'>
           <a

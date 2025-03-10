@@ -3,6 +3,7 @@ import { FaLink } from 'react-icons/fa';
 import translatorsImg from '/images/translators.png';
 import glbabImg from '/images/glbab.png';
 import payImg from '/images/pay.png';
+import catToolImg from '/images/cattool.png';
 type Props = {};
 
 const projects = [
@@ -39,12 +40,17 @@ const projects = [
     link: '',
     memos: [
       '소속 번역가를 위한 번역료 정산/조회',
-      '프론트엔드 - Next.js',
-      '백엔드 - Next.js',
+      '프론트엔드/백엔드 - Next.js',
       'DB - 구글 엑셀시트',
       '배포 - Vercel',
     ],
     img: payImg,
+  },
+  {
+    title: 'CAT tool',
+    link: '',
+    memos: ['Computer-Assisted Translation Tool', '프론트엔드(React)만 담당'],
+    img: catToolImg,
   },
 ];
 
@@ -62,15 +68,19 @@ export default function Experience({}: Props) {
         Work Experience
       </h2>
       <p className='mb-14'>
-        (주)바른번역에서 개발팀이 꾸려지는 23년 캣툴(Computer-Assisted
-        Translation Tool 번역가 보조 소프트웨어)의 프론트엔드 개발자로서
-        입사했습니다. 이후 단독으로 프로젝트를 맡아 Next.js 와 Django 를
-        사용하여 회사내 웹사이트를 개발하였습니다.
+        (주)바른번역에서 개발팀이 꾸려지는 23년 웹개발자로서 입사했습니다. 이후
+        단독으로 프로젝트를 맡아 Next.js 와 Django 를 사용하여 회사내 웹사이트를
+        개발하였습니다.
       </p>
-      <div className='flex flex-wrap gap-10'>
-        {projects.map((project) => (
-          <ProjectCard project={project} key={project.title + 'project'} />
-        ))}
+      <div className=''>
+        <div className='flex gap-10 justify-center flex-col md:flex-row items-center md:items-start mb-10'>
+          <ProjectCard project={projects[0]} />
+          <ProjectCard project={projects[1]} />
+        </div>
+        <div className='flex gap-10 justify-center flex-col md:flex-row items-center md:items-start'>
+          <ProjectCard project={projects[2]} />
+          <ProjectCard project={projects[3]} />
+        </div>
       </div>
     </div>
   );
@@ -78,7 +88,7 @@ export default function Experience({}: Props) {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className='flex flex-col border border-slate-300 w-[300px] rounded overflow-hidden h-fit'>
+    <div className='flex flex-col border border-slate-300 w-[350px] rounded overflow-hidden h-fit'>
       <div className='h-[200px] w-full bg-slate-100 shrink-0 overflow-hidden'>
         <img
           src={project.img}
